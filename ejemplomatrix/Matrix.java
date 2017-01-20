@@ -50,22 +50,24 @@ public class Matrix {
         }
         return media = suma / aux;
     }
-    public static int pideAsignatura(){
-        int asignatura = Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero de asignatura: ")); 
-        while (1 > asignatura || asignatura > 2){
-            asignatura = Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero de asignatura: "));
+    public static int pideAlumno(){
+        int alumno = Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero de alumno: ")); 
+        while (1 > alumno || alumno > 2){
+            alumno = Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero de alumno: "));
         }
-        return asignatura;
+        return alumno;
     }
     public static int calculoMediaAsignatura(int matrix[][]) {
         int media = 0, suma = 0, aux = 0;
-        int a = pideAsignatura();
-        for (int i = 0; i < a; i++) {
+        int a = pideAlumno();
+        int notasMedias[] = new int[2];
+        for (int i = a-1; i < a; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                  suma += matrix[i][j];
                  aux ++;
             }
         }
+
         return media = suma / aux;
     }
 }
