@@ -23,7 +23,7 @@ public class EjemploMatrix {
         System.out.println(Arrays.deepToString(matrixPrueba));
         System.out.println("Nota media total: " + Matrix.calculoMedia(matrixPrueba));
         System.out.println("Nota media de una asignatura " + Matrix.calculoMediaAlumno(matrixPrueba));
-
+//comentario
     }
 
 }
